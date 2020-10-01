@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="RPG">
+  <meta name="author" content="Stanislas BASQUIN">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>Dungeon</title>
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+  <script src="js/gamemanager.js"></script>
+  <script src="js/player.js"></script>
+</head>
+
+<body>
+  <h1>Welcome to RPG</h1>
+
+  <div class="header">
+    <p>Play the Greatest RPG Game ever to be made</p>
+    <h2>Choose your character</h2>
+  </div>
+
+
+  <div class="interface">
+    <a href="#" onclick="GameManager.setGameStart('Fighter')">
+      <img src="img/avatars/fighter.jpg" alt="fighter">
+      <div>
+        <h3>Fighter</h3>
+        <p>Le Fighter aura 12 points de vie (hp) et 4 points d'attaque (dmg) ainsi que 40 points de mana (mana).</p>
+        <p>Le Fighter aura une attaque DarkVision, infligeant 5 dégats. Lors du prochain tour, il prendra 2 dégats de
+          moins par coup reçu. Elle coute 20 mana.</p>
+      </div>
+    </a>
+
+    <a href="#" onclick="GameManager.setGameStart('Paladin')">
+      <img src="img/avatars/paladin.jpg" alt="paladin">
+      <div>
+        <h3>Paladin</h3>
+        <p>Le Paladin aura 16 points de vie et 3 points d'attaque ainsi que 160 points de mana.</p>
+        <p>Le Paladin aura une attaque Lighting, infligeant 4 dégats et le soignant de 5. Elle coute 40 mana.</p>
+      </div>
+    </a>
+
+    <a href="#" onclick="GameManager.setGameStart('Healer')">
+      <img src="img/avatars/healer.jpg" alt="healer">
+      <div>
+        <h3>Healer</h3>
+        <p>Le Healer aura 8 points de vie et 2 points d'attaque ainsi que 200 points de mana.</p>
+        <p>Le Header, quand a lui, aura une attaque rendant 8 pv. Elle coute 25 mana.</p>
+      </div>
+    </a>
+
+
+    <a href="#" onclick="GameManager.setGameStart('Berzerker')">
+      <img src="img/avatars/berzerker.jpg" alt="berzerker">
+      <div>
+        <h3>Berzerker</h3>
+        <p>Le Berzerker aura 8 points de vie et 4 points d'attaque ainsi que 0 points de mana.</p>
+        <p>Le Berzerker aura une attaque lui donnant +1 attaque pour tout le reste de la partie mais lui enlevant 1 hp.
+        </p>
+      </div>
+    </a>
+
+    <a href="#" onclick="GameManager.setGameStart('Assassin')">
+      <img src="img/avatars/assassin.jpg" alt="assassin">
+      <div>
+        <h3>Assassin</h3>
+        <p>L'assasin aura 6 points de vie et 6 points d'attaque ainsi que 20 points de mana.</p>
+        <p>L'Assassin aura un coup lui permettant de ne pas prendre de dégats lors du prochain tour. Il portera alors
+          une attaque
+          infligeant 7 dégats puis, si l'adversaire n'est pas mort, l'assassin prendra 7 dégats à son tour. Cette
+          attaque coûte 20
+          mana.</p>
+      </div>
+    </a>
+
+  </div>
+
+
+  <div class="actions">
+
+  </div>
+
+
+  <div class="arena">
+
+  </div>
+
+
+  <div class="enemy">
+
+  </div>
+
+</body>
+
+</html>
